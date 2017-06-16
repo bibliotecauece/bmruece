@@ -40,6 +40,12 @@ angular.module('starter')
 });
 
 angular.module('starter')
+.controller('BibliotecaContatoController', function($scope, $stateParams) {
+	
+	$scope.biblioteca = $stateParams.app;
+});
+
+angular.module('starter')
 .controller('RestauranteUniversitarioController', function($scope, $stateParams){
 
 	$scope.restauranteuniversitario = $stateParams.app;
